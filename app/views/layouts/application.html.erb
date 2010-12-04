@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>ASyncApp</title>
+  <%= stylesheet_link_tag :all %>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" language="javascript" charset="utf-8"></script>
+  <script type="text/javascript" language="javascript" charset="utf-8">
+  // <![CDATA[
+    window.ws_domain = 'localhost';
+    window.ws_port = '3000';
+    window.ws_path = 'chat';
+  // ]]>
+  </script>
+  <%= javascript_include_tag 'communicator', 'application' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<%- for message_type in @flash_types do -%>
+<%-   if flash.include? message_type -%>
+  <div id="<%= message_type.to_s %>"><%= flash[message_type] %></div>
+<%-   end -%>
+<%- end -%>
+
+<%= yield %>
+
+</body>
+</html>

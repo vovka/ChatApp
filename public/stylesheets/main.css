@@ -1,0 +1,8 @@
+#alert { color: #AA5555; border: solid #AA5555 1px; background: #FFAAAA; }
+#notice { color: #55AA55; border: solid #55AA55 1px; background: #AAFFAA; }
+
+.chat div { display: block; height: 270px; border: solid #000000 1px; overflow: auto;}
+.chat div { width: 480px; }
+.chat textarea { margin: 10px 0 0 0; padding: 0; width: 400px; float: left; }
+.chat textarea, .chat input { height: 50px; }
+.chat input { float: left; margin: 10px 0 0 10px; width: 70px }
