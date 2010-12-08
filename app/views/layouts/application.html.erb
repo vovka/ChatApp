@@ -5,12 +5,13 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" language="javascript" charset="utf-8"></script>
   <script type="text/javascript" language="javascript" charset="utf-8">
   // <![CDATA[
+    WEB_SOCKET_SWF_LOCATION = '/swf/WebSocketMain.swf';
     window.ws_domain = 'localhost';
     window.ws_port = '3000';
     window.ws_path = 'chat';
   // ]]>
   </script>
-  <%= javascript_include_tag 'communicator', 'application' %>
+  <%= javascript_include_tag 'swfobject', 'FABridge', 'web_socket', 'communicator', 'application' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
