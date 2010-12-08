@@ -5,7 +5,6 @@ require 'rails/all'
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
-require "lib/chat_action"
 
 module ASyncApp
   class Application < Rails::Application
@@ -42,3 +41,5 @@ module ASyncApp
     config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   end
 end
+
+require "lib/chat_action"
