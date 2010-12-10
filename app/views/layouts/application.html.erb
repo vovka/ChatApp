@@ -6,8 +6,8 @@
   <script type="text/javascript" language="javascript" charset="utf-8">
   // <![CDATA[
     WEB_SOCKET_SWF_LOCATION = '/swf/WebSocketMain.swf';
-    window.ws_domain = 'localhost';
-    window.ws_port = '3000';
+    window.ws_domain = '<%= request.host %>';
+    window.ws_port = '<%= request.port %>';
     window.ws_path = 'chat';
   // ]]>
   </script>
